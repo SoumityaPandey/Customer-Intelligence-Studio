@@ -2,21 +2,68 @@
 
 ### Interactive E-Commerce Customer Analytics & Segmentation Platform
 
+[![R](https://img.shields.io/badge/R-Programming-276DC3?logo=r&logoColor=white)](https://www.r-project.org/)
+[![Shiny](https://img.shields.io/badge/Shiny-Interactive%20Dashboard-0B7FAB?logo=r&logoColor=white)](https://shiny.posit.co/)
+[![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?logo=plotly&logoColor=white)](https://plotly.com/r/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white)](https://github.com/SoumityaPandey/Customer-Intelligence-Studio)
+
 > **Understand • Segment • Discover • Act**
 
-Customer Intelligence Studio is an interactive **R + Shiny customer analytics platform** that transforms raw e-commerce transaction data into actionable customer intelligence.
+Customer Intelligence Studio is an end-to-end **R + Shiny customer analytics platform** that transforms raw e-commerce transactions into actionable customer intelligence.
 
-The application combines **RFM analysis, customer segmentation, K-Means clustering, silhouette validation, cohort retention analysis, product analytics, geographic analysis, rule-based insights, and campaign simulation** inside a modern interactive dashboard.
-
-### 🌐 Live Demo
-
-**[🚀 Open Customer Intelligence Studio](https://connect.posit.cloud/soumityapandey/content/01a1d51a-24f0-90ff-cd5d-ab59d91c2680)**
-
-> The application is deployed on **Posit Connect Cloud** and can be explored directly from a browser without installing R or RStudio.
+It combines **data cleaning, KPI analysis, RFM segmentation, customer personas, K-Means clustering, silhouette validation, cohort retention analysis, product analytics, geographic intelligence, rule-based insights, and campaign simulation** into one interactive application.
 
 ---
 
-## 📊 Project Snapshot
+## 🌐 Live Demo
+
+### 👉 [🚀 Launch Customer Intelligence Studio](https://connect.posit.cloud/soumityapandey/content/01a1d51a-24f0-90ff-cd5d-ab59d91c2680)
+
+**No RStudio installation is required to explore the deployed application.**
+
+The application is deployed using **Posit Connect Cloud**.
+
+---
+
+## 💡 Why This Project?
+
+Many customer analytics projects stop at:
+
+```text
+CSV → Analysis → Charts
+```
+
+Customer Intelligence Studio goes further:
+
+```text
+Raw Transactions
+       ↓
+Data Cleaning
+       ↓
+Customer-Level Analytics
+       ↓
+RFM Segmentation
+       ↓
+K-Means Clustering
+       ↓
+Silhouette Validation
+       ↓
+Retention & Product Analytics
+       ↓
+Business Insights
+       ↓
+Campaign Simulation
+       ↓
+Interactive Shiny Application
+       ↓
+Cloud Deployment
+```
+
+The goal was to build not just an analysis script, but a **complete interactive analytics product**.
+
+---
+
+# 📊 Project at a Glance
 
 | Metric | Result |
 |---|---:|
@@ -37,129 +84,118 @@ The application combines **RFM analysis, customer segmentation, K-Means clusteri
 
 # ✨ Key Features
 
-## 📈 1. Executive Overview
+### 📈 Executive Overview
 
-A business-oriented dashboard that provides an immediate view of:
+A business-focused dashboard containing:
 
-- Total Revenue
-- Total Customers
-- Total Orders
+- Revenue
+- Customers
+- Orders
 - Average Order Value
-- Monthly Revenue Pulse
-- Customer Segment Distribution
-- Country Revenue Intelligence
-- K-Means Cluster Analysis
-
-The Overview is designed to answer:
-
-> **"What is happening in the customer base?"**
+- Monthly revenue trends
+- Customer segment distribution
+- Country revenue intelligence
+- K-Means cluster visualization
 
 ---
 
-## 🧬 2. Customer DNA
+### 🧬 Customer DNA
 
-A customer-level intelligence module for investigating individual customers.
+Deep-dive into individual customers using:
 
-For a selected customer, the application provides:
-
-- RFM Score
 - Recency
 - Frequency
-- Monetary Value
-- Average Order Value
+- Monetary value
+- RFM Score
 - Customer Segment
 - Customer Personality
-- Purchase History
-- Interactive RFM Radar
-- Customer-level transaction information
+- Order history
+- Interactive RFM radar visualization
 
-### Example customer personas
+Example customer personalities include:
 
-- 👑 VIP Shopper
-- 💎 Big Spender
-- 🔄 Loyal Shopper
-- 🌱 Promising Shopper
-- 😴 Sleeping Giant
-- 💤 Dormant Shopper
-
-This transforms aggregate analytics into **individual customer intelligence**.
+```text
+VIP Shopper
+Big Spender
+Loyal Shopper
+Promising Shopper
+Sleeping Giant
+Dormant Shopper
+```
 
 ---
 
-# 🔄 3. Retention Lab
+### 🔄 Retention Lab
 
-The Retention Lab performs **cohort-based retention analysis**.
+Cohort-based customer retention analysis with:
 
-It provides:
-
-- First-purchase cohort identification
+- First-purchase cohorts
 - Month-by-month retention
-- Interactive retention heatmap
+- Interactive heatmap
 - Retention snapshot
 - Cohort comparison
 
-The final dashboard reports an average observed retention of:
+Final dashboard result:
 
-> **23.9%**
-
-The heatmap makes it easy to identify cohorts with stronger or weaker repeat behaviour.
+> **23.9% average observed retention after month 0**
 
 ---
 
-# 📦 4. Product Explorer
+### 📦 Product Explorer
 
-An interactive product-performance module.
+Explore product performance by country.
 
-Users can:
+Metrics include:
 
-- Select a country
-- Choose the number of top products
-- Compare product revenue
-- Compare units sold
-- View customer reach
-- View order counts
-- Search and sort products
+- Revenue
+- Units sold
+- Customers
+- Orders
 
-### Product-level metrics
-
-```text
-Revenue
-Units
-Customers
-Orders
-```
-
-This connects **product performance with geographic context**.
+Users can select a country and dynamically change the number of top products displayed.
 
 ---
 
-# 🧠 5. Smart Insights
+### 🌍 Country Intelligence
 
-Instead of forcing users to interpret every chart manually, the application generates **rule-based observations** from the dataset.
+Analyze customer activity across different markets using:
 
-Examples include:
+- Revenue
+- Customers
+- Orders
+- Units
+
+The United Kingdom is the leading revenue market in the final analysis, contributing approximately **£7.31 million**.
+
+---
+
+### 🧠 Smart Insights
+
+Automatically generates **rule-based observations** from the current dataset.
+
+Examples:
 
 - Leading revenue market
 - Largest customer segment
 - At Risk + Lost customer count
 - Repeat customer percentage
-- Retention recommendations
+- Retention-oriented recommendations
 
-These insights are deliberately **rule-based and explainable** rather than being presented as opaque AI-generated predictions.
+The insight engine is deliberately **rule-based and explainable**, rather than presenting generated statements as predictive AI.
 
 ---
 
-# 🎯 6. Campaign Simulator
+### 🎯 Campaign Simulator
 
-A transparent **what-if marketing simulator**.
+An interactive marketing **what-if simulator**.
 
-Users can select:
+Users select:
 
 - Target customer segment
 - Discount percentage
 - Expected response rate
 
-The dashboard then estimates:
+The application estimates:
 
 ```text
 Targeted Customers
@@ -171,30 +207,13 @@ Estimated Gross Revenue
 Estimated Revenue After Discount
 ```
 
-### Important
-
-The simulator is explicitly a **scenario estimate, not a prediction**.
-
-This makes the feature easy to explain academically and avoids presenting assumed response rates as a trained predictive model.
+> The simulator is a transparent scenario estimator, **not a predictive campaign-response model**.
 
 ---
 
-# 📋 7. Customer Data Explorer
+### 📋 Customer Data Explorer
 
-A complete customer-level analytical table with:
-
-- Customer ID
-- Country
-- Recency
-- Frequency
-- Monetary Value
-- Average Order Value
-- RFM Score
-- Segment
-- Personality
-- Cluster
-
-The table supports:
+Interactive customer-level table supporting:
 
 - Search
 - Sorting
@@ -202,31 +221,39 @@ The table supports:
 - Pagination
 - CSV download
 
-The final dataset contains:
+Customer-level fields include:
 
-> **4,338 customer records**
+```text
+CustomerID
+Country
+Recency
+Frequency
+Monetary
+Average Order Value
+RFM Score
+Segment
+Personality
+Cluster
+```
 
 ---
 
-# 🤖 Analytical Methods
+# 🧠 Analytical Methods
 
 ## RFM Analysis
 
-Customer behaviour is summarized using three dimensions:
+Customer behaviour is represented using:
 
 ### Recency
-
 How recently the customer purchased.
 
 ### Frequency
-
-How frequently the customer places orders.
+How frequently the customer placed orders.
 
 ### Monetary
+How much the customer spent.
 
-How much the customer spends.
-
-These values are converted into scores and combined into an overall **RFM Score**.
+These values are scored and combined into an overall RFM Score.
 
 ### Customer Segments
 
@@ -240,27 +267,27 @@ These values are converted into scores and combined into an overall **RFM Score*
 
 ---
 
-# 🔬 K-Means Customer Clustering
+# 🤖 K-Means Clustering
 
-The project uses **K-Means clustering** to discover behavioural groups beyond the manually defined RFM segments.
+Customer behaviour is additionally analysed using K-Means clustering.
 
-The clustering pipeline is:
+### Pipeline
 
 ```text
 Recency
 Frequency
 Monetary
-    ↓
+      ↓
 Log Transformation
-    ↓
-Scaling
-    ↓
+      ↓
+Feature Scaling
+      ↓
 K-Means
-    ↓
-Cluster Validation
+      ↓
+Silhouette Validation
 ```
 
-Instead of arbitrarily selecting a cluster count, candidate values:
+Candidate values:
 
 ```text
 K = 2
@@ -270,19 +297,416 @@ K = 5
 K = 6
 ```
 
-are evaluated using the **average silhouette score**.
+The application evaluates the average silhouette score for each candidate and automatically selects the best-performing K.
 
-### Final result
+### Final Result
 
 ```text
 Optimal K       = 2
 Silhouette      = 0.433
 ```
 
-This makes the clustering process more **data-driven and defensible**.
+This avoids choosing the cluster count arbitrarily.
 
 ---
 
 # 🔄 Cohort Retention Analysis
 
-Customers are grouped according
+Customers are grouped according to their **first purchase month**.
+
+The system then tracks subsequent purchases across later months.
+
+```text
+First Purchase
+      ↓
+Cohort Assignment
+      ↓
+Month 1
+      ↓
+Month 2
+      ↓
+Month 3
+      ↓
+...
+      ↓
+Retention Heatmap
+```
+
+This helps identify cohorts with stronger or weaker repeat behaviour.
+
+---
+
+# 🧹 Data Preparation
+
+The project starts with **541,909 raw transactions**.
+
+The cleaning process removes:
+
+- Missing Customer IDs
+- Missing transaction dates
+- Cancelled invoices
+- Non-positive quantities
+- Non-positive unit prices
+
+Transaction value is calculated as:
+
+```text
+TotalAmount = Quantity × UnitPrice
+```
+
+After cleaning:
+
+> **397,884 valid transactions**
+
+remain for analysis.
+
+---
+
+# 🏗️ System Architecture
+
+```text
+                    ONLINE RETAIL DATA
+                            │
+                            ▼
+                    Data Cleaning
+                            │
+                            ▼
+                  Clean Transaction Data
+                            │
+          ┌─────────────────┼─────────────────┐
+          │                 │                 │
+          ▼                 ▼                 ▼
+         KPI               RFM             Cohort
+      Analysis           Analysis          Analysis
+          │                 │                 │
+          │                 ▼                 │
+          │           Segmentation            │
+          │                 │                 │
+          │                 ▼                 │
+          │          K-Means Clustering       │
+          │                 │                 │
+          └─────────────────┼─────────────────┘
+                            ▼
+                  Customer Intelligence
+                            │
+          ┌─────────────────┼─────────────────┐
+          ▼                 ▼                 ▼
+      Products          Countries         Insights
+          │                 │                 │
+          └─────────────────┼─────────────────┘
+                            ▼
+                    Shiny Dashboard
+                            │
+                            ▼
+                    Posit Connect Cloud
+                            │
+                            ▼
+                       LIVE WEB APP
+```
+
+---
+
+# 🛠️ Technology Stack
+
+### Programming & Application
+
+- **R**
+- **Shiny**
+- **bslib**
+- **bsicons**
+
+### Data Processing
+
+- **dplyr**
+- **tidyr**
+- **lubridate**
+
+### Visualization
+
+- **ggplot2**
+- **Plotly**
+
+### Interactive Tables
+
+- **DT**
+
+### Analytics & Machine Learning
+
+- RFM Analysis
+- K-Means Clustering
+- Silhouette Analysis
+- Cohort Analysis
+
+### Development & Deployment
+
+- RStudio
+- Visual Studio Code
+- Git
+- GitHub
+- Posit Connect Cloud
+
+---
+
+# 📁 Repository Structure
+
+```text
+Customer-Intelligence-Studio/
+│
+├── app/
+│   └── app.R
+│
+├── R/
+│   └── analysis.R
+│
+├── data/
+│   ├── clean_retail_data.rds
+│   └── README.md
+│
+├── tests/
+│   └── testthat/
+│       └── test-analysis.R
+│
+├── outputs/
+│
+├── packages.R
+├── run_analysis.R
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+### Dataset Handling
+
+The original `OnlineRetail.csv` is approximately **43.5 MB** and is intentionally excluded from GitHub.
+
+The application uses the processed:
+
+```text
+data/clean_retail_data.rds
+```
+
+file instead.
+
+This keeps the repository smaller and makes deployment more reliable.
+
+---
+
+# 🚀 Run Locally
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/SoumityaPandey/Customer-Intelligence-Studio.git
+cd Customer-Intelligence-Studio
+```
+
+## 2. Open the project in RStudio
+
+Install the required packages:
+
+```r
+source("packages.R")
+```
+
+## 3. Run the Shiny application
+
+```r
+shiny::runApp("app")
+```
+
+The dashboard will open in your browser.
+
+---
+
+# ☁️ Deployment
+
+The application is deployed through **Posit Connect Cloud**.
+
+### Deployment workflow
+
+```text
+R + Shiny
+   ↓
+Local Testing
+   ↓
+Data Preprocessing
+   ↓
+RDS Dataset
+   ↓
+Posit Connect Cloud
+   ↓
+HTTPS Web Application
+```
+
+### 🌐 Live Application
+
+**[🚀 Open Customer Intelligence Studio](https://connect.posit.cloud/soumityapandey/content/01a1d51a-24f0-90ff-cd5d-ab59d91c2680)**
+
+The live application was verified against the final local analytical results.
+
+---
+
+# 📈 Final Analytical Results
+
+### Business Performance
+
+```text
+Revenue              £8,911,408
+Customers                 4,338
+Orders                    18,532
+Average Order Value         £481
+```
+
+### Customer Behaviour
+
+```text
+Repeat Customer Rate       65.6%
+At Risk + Lost Customers   1,309
+```
+
+### Machine Learning
+
+```text
+Optimal K                   2
+Silhouette Score          0.433
+```
+
+### Retention
+
+```text
+Observed Retention        23.9%
+```
+
+---
+
+# 🧪 Testing
+
+The repository includes `testthat` tests for core analytical functions.
+
+The tests validate key aspects such as:
+
+- RFM output structure
+- Required customer-level fields
+- Positive Frequency values
+- Positive Monetary values
+- Core analytical calculations
+
+---
+
+# ⚠️ Limitations
+
+- The dataset represents historical retail transactions rather than real-time transactions.
+- RFM segmentation depends on the selected scoring methodology.
+- K-Means results depend on feature transformation, scaling, initialization, and K selection.
+- The Campaign Simulator is a what-if estimator rather than a trained response-prediction model.
+- Smart Insights are deterministic rules rather than generative AI.
+- The application is designed as an academic and portfolio analytics platform rather than a complete enterprise CRM system.
+
+---
+
+# 🔮 Future Scope
+
+Potential extensions include:
+
+- 🔮 Customer churn prediction
+- 🤖 Campaign response prediction
+- 🛍️ Product recommendation system
+- 🧺 Market-basket analysis
+- 📈 Revenue forecasting
+- 🗄️ Database integration
+- 🔄 Automated data pipelines
+- 🔐 Authentication and role-based access
+- 📊 Customer Lifetime Value modelling
+- ⚡ Near-real-time analytics
+
+---
+
+# 🎓 Academic & Portfolio Value
+
+This project demonstrates a complete data-science workflow:
+
+```text
+Data Engineering
+      +
+Exploratory Analytics
+      +
+Customer Segmentation
+      +
+Machine Learning
+      +
+Model Validation
+      +
+Interactive Visualization
+      +
+Business Intelligence
+      +
+Cloud Deployment
+```
+
+Rather than demonstrating only individual R functions, the project demonstrates how multiple analytical techniques can be integrated into a **usable end-to-end data application**.
+
+---
+
+# 👨‍💻 Authors
+
+### Soumitya Pandey
+B.Tech – Computer Science & Engineering  
+Data Science Specialization
+
+### Swapnil Mishra
+
+### Yashika
+
+---
+
+# 📚 Dataset
+
+**Online Retail Dataset**
+
+Source: **UCI Machine Learning Repository**
+
+The dataset contains transaction records from an online retail business and is used for educational and analytical purposes.
+
+---
+
+# 📄 License
+
+This project is provided for academic and educational purposes.
+
+See the `LICENSE` file for licensing information.
+
+---
+
+# ⭐ Final Project Highlights
+
+```text
+541K+ Raw Transactions
+        ↓
+397K+ Clean Transactions
+        ↓
+4,338 Customers
+        ↓
+RFM Segmentation
+        ↓
+K-Means + Silhouette Validation
+        ↓
+Cohort Retention
+        ↓
+Product & Country Intelligence
+        ↓
+Smart Insights
+        ↓
+Campaign Simulation
+        ↓
+Interactive Shiny Dashboard
+        ↓
+☁️ Live Cloud Deployment
+```
+
+## 🚀 Explore the Project
+
+### **[Launch Live Dashboard →](https://connect.posit.cloud/soumityapandey/content/01a1d51a-24f0-90ff-cd5d-ab59d91c2680)**
+
+### **[View GitHub Repository →](https://github.com/SoumityaPandey/Customer-Intelligence-Studio)**
+
+---
