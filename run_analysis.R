@@ -1,0 +1,13 @@
+suppressPackageStartupMessages(library(dplyr))
+source("R/analysis.R")
+data <- clean_retail_data("data/OnlineRetail.csv")
+rfm <- create_rfm(data)
+optimal <- find_optimal_k(rfm)
+rfm <- apply_kmeans(rfm, optimal)$data
+write.csv(rfm, "customer_intelligence_results.csv", row.names = FALSE)
+write.csv(optimal$scores, "cluster_validation.csv", row.names = FALSE)
+cat("Analysis complete.\n")
+cat("Revenue:", sum(data$TotalAmount), "\n")
+cat("Customers:", dplyr::n_distinct(data$CustomerID), "\n")
+cat("Orders:", dplyr::n_distinct(data$InvoiceNo), "\n")
+cat("Best K:", optimal$best_k, "\n")

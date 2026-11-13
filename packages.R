@@ -1,0 +1,28 @@
+packages <- c(
+  "shiny", "bslib", "bsicons", "dplyr", "tidyr", "lubridate",
+  "ggplot2", "plotly", "DT", "scales", "cluster", "countrycode"
+)
+missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]
+if (length(missing) > 0) install.packages(missing, repos = "https://cloud.r-project.org")
+cat("All required packages are ready.\n")
+getwd()
+list.files()
+project_file <- file.choose()
+setwd(dirname(project_file))
+getwd()
+list.files()
+source("run_analysis.R")
+library(dplyr)
+library(tidyr)
+library(lubridate)
+library(ggplot2)
+library(cluster)
+library(scales)
+library(countrycode)
+source("run_analysis.R")
+setwd("C:/Users/ASUS/Downloads/Customer_Intelligence_Studio")
+source("run_analysis.R")
+shiny::runApp("app")
+setwd("C:/Users/ASUS/Downloads/Customer_Intelligence_Studio")
+source("run_analysis.R")
+shiny::runApp("app")

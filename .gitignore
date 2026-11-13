@@ -1,0 +1,12 @@
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Raw dataset - do not upload
+data/OnlineRetail.csv
+
+# Generated analysis files
+customer_intelligence_results.csv
+cluster_validation.csv
+outputs/
